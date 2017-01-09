@@ -131,7 +131,7 @@ try {
                     $pdo = $context['pdo'];
                     $id = $args['id'];
                     $result = $pdo->query("select * from products where id = {$id}");
-                    return $result->fetchObject();
+                    return $result->fetchObject() ?: null;
                 }
             ],
             'products' => [
