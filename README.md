@@ -136,7 +136,7 @@ Kemudian silahkan coba query dibawah ini:
 
 Hasilnya akan seperti ini:
 
-[[https://github.com/emsifa/contoh-graphql-php-mysql/blob/master/img/ss.png|alt=Hasil]]
+![Contoh hasil](https://github.com/emsifa/contoh-graphql-php-mysql/raw/master/img/ss.png)
 
 ## Penutup
 
