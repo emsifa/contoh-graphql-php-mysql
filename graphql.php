@@ -10,7 +10,7 @@ use GraphQL\Type\Definition\ObjectType;
 // #1 PERSIAPAN
 // ===============================================================================================
 
-// ## 1.1 Definisikan Konstanta yg dibutuhkan
+// ## 1.0 Definisikan Konstanta yg dibutuhkan
 // -----------------------------------------------------------------------------------------------
 // ini dipakai di ProductImageType dan ProductType untuk ambil url image dan thumbnail
 define('BASE_URL', 'http://localhost:3000');
@@ -89,7 +89,6 @@ try {
     require __DIR__ . '/types/ProductCategoryType.php';
     require __DIR__ . '/types/ProductReviewType.php';
     require __DIR__ . '/types/ProductImageType.php';
-    // require __DIR__ . '/types/ImageType.php';
     require __DIR__ . '/Types.php';
 
     // ## 2.2
@@ -196,9 +195,8 @@ try {
         (array) $data['variables']
     );
 
-    // #4 Handling Error
+    // #4 Memasukkan Error kedalam $result (kalo ada)
     // ===============================================================================================
-    // Masukkan error ke $result (jika ada)
     if ($debug && !empty($phpErrors)) {
         $result['extensions']['phpErrors'] = array_map(
             ['GraphQL\Error\FormattedError', 'createFromPHPError'],
