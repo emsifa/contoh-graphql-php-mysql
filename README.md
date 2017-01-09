@@ -82,7 +82,7 @@ Untuk mencoba graphql, silahkan buka browser, cobalah beberapa url berikut:
 * `http://localhost:3000/graphql.php`: akan menampilkan "Hello World".
 * `http://localhost:3000/graphql.php?query={user(id:5){id,name,email}}`: akan menampilkan JSON berisi 'id', 'name', dan 'email' user yang memiliki id 5.
 
-Untuk mencoba query yang lebih rumit, umumnya developer akan menggunakan '[Graph_i_QL](https://github.com/graphql/graphiql)'. Tapi karena setupnya yang cukup memakan waktu, kamu dapat memakai ekstensi google chrome [GraphiQL Feen]((https://chrome.google.com/webstore/detail/graphiql-feen/mcbfdonlkfpbfdpimkjilhdneikhfklp)
+Untuk mencoba query yang lebih rumit, umumnya developer akan menggunakan '[Graph*i*QL](https://github.com/graphql/graphiql)'. Tapi karena setupnya yang cukup memakan waktu, kamu dapat memakai ekstensi google chrome [Graph*i*QL Feen](https://chrome.google.com/webstore/detail/graphiql-feen/mcbfdonlkfpbfdpimkjilhdneikhfklp)
 
 Setelah menginstall, buka ekstensi tersebut, masuk ke tab server, masukkan server url menjadi `http://localhost:3000/graphql.php`. 
 
