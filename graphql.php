@@ -91,7 +91,7 @@ try {
     require __DIR__ . '/types/ProductImageType.php';
     require __DIR__ . '/Types.php';
 
-    // ## 2.2
+    // ## 2.2 Membuat Query Type
     // -----------------------------------------------------------------------------------------------
     // query type adalah type yg digunakan untuk root node
     // saya definisikan disini (bukan pada class & file lain seperti type-type di atas)
@@ -116,7 +116,7 @@ try {
                     $pdo = $context['pdo'];
                     // disini $args['id'] sudah pasti integer, 
                     $id = $args['id'];
-                    // jadi tidak perlu prepared statement juga tidak apa
+                    // jadi tidak menggunakan prepared statement juga tidak apa
                     $result = $pdo->query("select * from users where id = {$id}");
                     return $result->fetchObject() ?: null;
                 }
