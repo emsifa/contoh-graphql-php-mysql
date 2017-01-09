@@ -78,7 +78,7 @@ class ProductType extends ObjectType
         $pdo = $context['pdo'];
         $category_id = $value->category_id;
         $result = $pdo->query("select * from product_category where id = {$category_id}");
-        return $result->fetchObject();
+        return $result->fetchObject() ?: null;
     }
 
     public function images($value, $args, $context)
